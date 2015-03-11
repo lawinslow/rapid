@@ -10,7 +10,7 @@ install:
   - sudo apt-get install gfortran
   - sudo apt-get install libblas-dev libatlas-dev liblapack-dev
   - wget "http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.3-p7.tar.gz" -O /tmp/petsc-3.3-p7.tar.gz
-  - tar -xvf /tmp/petsc-3.3-p7.tar.gz
+  - tar -xf /tmp/petsc-3.3-p7.tar.gz
   - cd petsc-3.3-p7
   - ./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --download-fblaslapack --download-mpich
   - make all
