@@ -19,8 +19,8 @@ install:
   - wget "http://www.mcs.anl.gov/research/projects/tao/download/tao-2.0-p6.tar.gz" -O /tmp/tao-2.0-p6.tar.gz
   - tar -xf /tmp/tao-2.0-p6.tar.gz
   - cd tao-2.0-p6
-  - make all
   - export TAO_DIR=${PWD}
+  - make all
   - cd ..
   
 script: 
