@@ -22,11 +22,14 @@ install:
   - export TAO_DIR=${PWD}
   - make all
   - cd ..
-  - wget "ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-fortran-4.4.0.tar.gz" -O /tmp/netcdf-fortran-4.4.0.tar.gz
-  - tar -xf /tmp/netcdf-fortran-4.4.0.tar.gz
-  - cd netcdf-fortran-4.4.0
+  - wget "ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-3.6.3.tar.gz" -O /tmp/netcdf-3.6.3.tar.gz
+  - tar -xf /tmp/netcdf-3.6.3.tar.gz
+  - cd netcdf-3.6.3
+  - ./configure --prefix=${PWD}-install
   - make check
-  - sudo make install
+  - make install 
+  - export TACC_NETCDF_LIB=${PWD}-install/lib
+  - export TACC_NETCDF_INC=${PWD}-install/include
   - cd ..
   
 script: 
