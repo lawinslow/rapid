@@ -22,6 +22,12 @@ install:
   - export TAO_DIR=${PWD}
   - make all
   - cd ..
+  - wget "ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-fortran-4.4.0.tar.gz" -O /tmp/netcdf-fortran-4.4.0.tar.gz
+  - tar -xf /tmp/netcdf-fortran-4.4.0.tar.gz
+  - cd netcdf-fortran-4.4.0
+  - make check
+  - sudo make install
+  - cd ..
   
 script: 
   - pwd
