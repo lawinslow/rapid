@@ -9,6 +9,8 @@ language: cpp
 install:
   - sudo apt-get install gfortran
   - wget "http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.3-p7.tar.gz"
+  - ls
+  - pwd
   - tar -xzf petsc-3.2-p7.tar.gz
   - cd petsc-3.2-p7
   - ./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --download-fblaslapack --download-mpich
