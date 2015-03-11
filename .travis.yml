@@ -9,6 +9,6 @@ language: c
 env:
    
 before_install:
-  - sudo apt-get install gfortran g77
+  - sudo apt-get install gfortran
 
 install:
