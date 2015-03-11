@@ -16,9 +16,9 @@ install:
   - make all
   - export PETSC_DIR=${PWD}
   - cd ..
-  - wget "http://www.mcs.anl.gov/research/projects/tao/download/tao-2.0-p6.tar.gz" -O /tmp/tao-2.0-p6.tar.gz
-  - tar -xf /tmp/tao-2.0-p6.tar.gz
-  - cd tao-2.0-p6
+  - wget "http://www.mcs.anl.gov/research/projects/tao/download/tao-2.1-p2.tar.gz" -O /tmp/tao-2.1-p2.tar.gz
+  - tar -xf /tmp/tao-2.1-p2.tar.gz
+  - cd tao-2.1-p2
   - export TAO_DIR=${PWD}
   - make all
   - cd ..
